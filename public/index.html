@@ -1,26 +1,66 @@
 <!DOCTYPE html>
-<html ng-app="NotebookApp">
+<html ng-app="EventApp">
   <head>
     <meta charset="utf-8">
-    <title>Notebook</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
-    <script src="/script/app.js"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/blog.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-animate.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC22ExL49DHoowHqx6gVDr3qYOCW0_BI4s&"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
   </head>
-  <body>
-    <h1>Notebook</h1>
-    <form
-      ng-controller="CreateController as createCtrl"
-      ng-submit="createCtrl.create()">
-      <input type="text" ng-model="createCtrl.value" />
-      <input type="submit" value="Create a new note" />
+  <body ng-controller="MainController as mainCtrl" style="background-color: #ededed;">
+    <header>
+      <div class="header container2">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="user"><img src="images/user.png"></li>
+            <li class="user">User</li>
+            <li class="logout" ng-click="mainCtrl.logOut()">
 
-      <ul>
-        <li ng-repeat="note in createCtrl.notes">
-          {{note.note_value}}
-          <br/>
-          Created at: {{note.created}}
-        </li>
-      </ul>
-    </form>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo-s">
+
+        </div>
+      </div>
+    </header>
+
+    <div id="map"></div>
+    <div class="event"></div>
+
+    <nav class="blog-nav">
+      <a class="blog-nav-item" href="#">Upcomming Events</a>
+      <a class="blog-nav-item" href="#">Favorite Events</a>
+      <a class="blog-nav-item" href="#">Favorite Artists</a>
+      <a class="blog-nav-item" href="#">Past Events</a>
+      <a class="blog-nav-item" href="#">Calendar</a>
+      <div class="search">
+        <div class="form-group">
+          <input ng-model="searchText" class="form-control" type="text" placeholder="Search" maxlength="70">
+        </div>
+      </div>
+    </nav>
+
+    <div class="container2">
+      <div class="post">
+      <div class="posts">
+
+      </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Eventit</p>
+    </footer>
+
+    <script type="text/javascript" src="script/app.js"></script>
+    <script type="text/javascript" src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="ie-emulation-modes-warning.js"></script>
+    <script type="text/javascript" src="script/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
