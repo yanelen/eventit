@@ -263,37 +263,37 @@ header {
 /* Event */
 
 .picture {
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-}
-
-.picture1 {
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-}
-
-.picture img {
-  height: 150px;
+  width: 100%
 }
 
 .detail {
 }
 
 .column1 {
-  width: 26%;
+  width: 25%;
   float: left;
+  margin-right: 3%;
 }
 
 .column2 {
-  width: 66%
+  width: 70%
   float: left;
+}
+
+@media only screen and (max-width: 640px) {
+  .column1 .column2 {
+    width: 100%;
+  }
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* Footer */
 
-footer{
+footer {
   text-align: center;
   padding: 20px;
   font-size: 11px;

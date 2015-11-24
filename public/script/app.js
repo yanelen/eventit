@@ -17,7 +17,10 @@ $(document).ready(
 
         //$('.picture').css('background-image', 'url(' + oData.events.event[0].image.medium.url + ')');
         //$('.picture1').css('background-image', 'url(' + oData.events.event[1].image.medium.url + ')');
-      //$('.picture').append('<img src="'+oData.events.event[i].image.medium.url+'">');
+        $('.events').append('<div class="row"><div class="column1"><img class="picture" src="'
+        +oData.events.event[i].image.medium.url+'"></div><div class="column2">'
+        +oData.events.event[i].title+'</row></div>'
+        );
       }
       $('.detail').append('<h5>' + oData.events.event[0].title + '</h5><h6>' + oData.events.event[0].venue_name + '</h6>');
     });
