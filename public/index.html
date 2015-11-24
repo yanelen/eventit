@@ -30,9 +30,6 @@
       </div>
     </header>
 
-    <div id="map"></div>
-    <div class="event"></div>
-
     <nav class="blog-nav">
       <a class="blog-nav-item" href="#">Upcomming Events</a>
       <a class="blog-nav-item" href="#">Favorite Events</a>
@@ -47,8 +44,25 @@
     </nav>
 
     <div class="container2">
-      <div class="post">
-      <div class="posts">
+
+      <div class="event">
+      <div class="events">
+
+      <div class="column1">
+        <div class="picture"></div>
+        <div class="picture1"></div>
+      </div>
+
+      <div class="column2">
+        <div class="detail"></div>
+      </div>
+        <button ng-click="mainCtrl.loadMapCoor()">map</button>
+        <div id="map"></div>
+
+
+
+
+
 
       </div>
       </div>
@@ -60,7 +74,7 @@
 
     <script type="text/javascript" src="script/app.js"></script>
     <script type="text/javascript" src="script/bootstrap.min.js"></script>
-    <script type="text/javascript" src="ie-emulation-modes-warning.js"></script>
+    <script type="text/javascript" src="script/ie-emulation-modes-warning.js"></script>
     <script type="text/javascript" src="script/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

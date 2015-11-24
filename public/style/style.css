@@ -71,6 +71,7 @@ body {
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #cfd2d4;
+  height: 45px;
 }
 
 .logo-s {
@@ -256,6 +257,36 @@ header {
 
 .comment {
   font-size: 12px;
+}
+
+
+/* Event */
+
+.picture {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+.picture1 {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+.picture img {
+  height: 150px;
+}
+
+.detail {
+}
+
+.column1 {
+  width: 30%
+}
+
+.column2 {
+  width: 70%
 }
 
 /* Footer */

@@ -10,14 +10,16 @@ $(document).ready(
    };
 
    EVDB.API.call("/events/search", oArgs, function(oData) {
-
+     console.log(oData);
       for (i = 0; i < oData.events.event.length; i++){
         lat = oData.events.event[i].latitude;
         lng = oData.events.event[i].longitude;
-        initMap();
-        $('.event').append('<img src="'+oData.events.event[i].image.medium.url+'">');
-        $('.event').append(oData.events.event[i].title);
+
+        $('.picture').css('background-image', 'url(' + oData.events.event[0].image.medium.url + ')');
+        $('.picture1').css('background-image', 'url(' + oData.events.event[1].image.medium.url + ')');
+      //$('.picture').append('<img src="'+oData.events.event[i].image.medium.url+'">');
       }
+      $('.detail').append('<h5>' + oData.events.event[0].title + '</h5><h6>' + oData.events.event[0].venue_name + '</h6>');
     });
  }
 )
