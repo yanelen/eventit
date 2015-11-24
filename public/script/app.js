@@ -15,8 +15,8 @@ $(document).ready(
         lat = oData.events.event[i].latitude;
         lng = oData.events.event[i].longitude;
 
-        $('.picture').css('background-image', 'url(' + oData.events.event[0].image.medium.url + ')');
-        $('.picture1').css('background-image', 'url(' + oData.events.event[1].image.medium.url + ')');
+        //$('.picture').css('background-image', 'url(' + oData.events.event[0].image.medium.url + ')');
+        //$('.picture1').css('background-image', 'url(' + oData.events.event[1].image.medium.url + ')');
       //$('.picture').append('<img src="'+oData.events.event[i].image.medium.url+'">');
       }
       $('.detail').append('<h5>' + oData.events.event[0].title + '</h5><h6>' + oData.events.event[0].venue_name + '</h6>');

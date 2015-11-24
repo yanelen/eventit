@@ -282,11 +282,13 @@ header {
 }
 
 .column1 {
-  width: 30%
+  width: 26%;
+  float: left;
 }
 
 .column2 {
-  width: 70%
+  width: 66%
+  float: left;
 }
 
 /* Footer */
