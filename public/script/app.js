@@ -4,8 +4,8 @@ $(document).ready(
       app_key: "V8Qd6k9G6vFg92b3",
       q: "music",
       where: "New York",
-      "date": "2015112200-2016112200",
-      page_size: 5,
+      "date": "2015120100-2016120100",
+      page_size: 10,
       sort_order: "popularity",
    };
 
@@ -15,7 +15,12 @@ $(document).ready(
         initMap(oData.events.event[i].latitude, oData.events.event[i].longitude);
         $('.events').append('<div class="row"><div class="column1"><img class="picture" src="'
         +oData.events.event[i].image.medium.url+'"></div><div class="column2"><div class="title">'
-        +oData.events.event[i].title+'</div><div class="details">'+oData.events.event[i].venue_name+'</div></div>'
+        +oData.events.event[i].title+'</div><div class="details">'
+        +oData.events.event[i].venue_name+'<br>'
+        +oData.events.event[i].venue_address+'<br>'
+        +oData.events.event[i].city_name+', '+oData.events.event[i].region_abbr+' '+oData.events.event[i].postal_code+'<br><br>'
+        +oData.events.event[i].start_time+
+        '</div></div><div class="button"><a href="#" class="btn btn-small">Add to Favorites</a></div>'
         );
       }
     });

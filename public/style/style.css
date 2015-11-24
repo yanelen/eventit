@@ -260,7 +260,6 @@ header {
 
 .picture {
   width: 100%;
-
 }
 
 .detail {
@@ -270,18 +269,14 @@ header {
   width: 25%;
   float: left;
   margin-right: 3%;
-  vertical-align: top;
+  padding: 1%;
+  border: 1px solid #e6e6e6;
 }
 
 .column2 {
   width: 70%
   float: left;
-}
-
-@media only screen and (max-width: 640px) {
-  .column1 .column2 {
-    width: 100%;
-  }
+  display: block;
 }
 
 .row {
@@ -296,6 +291,12 @@ header {
 .title {
   font-size: 18px;
   color: #a3a3a3;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 15px;
+  }
 }
 
 /* Footer */
