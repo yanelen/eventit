@@ -12,23 +12,18 @@ $(document).ready(
    EVDB.API.call("/events/search", oArgs, function(oData) {
      console.log(oData);
       for (i = 0; i < oData.events.event.length; i++){
-        lat = oData.events.event[i].latitude;
-        lng = oData.events.event[i].longitude;
-
-        //$('.picture').css('background-image', 'url(' + oData.events.event[0].image.medium.url + ')');
-        //$('.picture1').css('background-image', 'url(' + oData.events.event[1].image.medium.url + ')');
+        initMap(oData.events.event[i].latitude, oData.events.event[i].longitude);
         $('.events').append('<div class="row"><div class="column1"><img class="picture" src="'
-        +oData.events.event[i].image.medium.url+'"></div><div class="column2">'
-        +oData.events.event[i].title+'</row></div>'
+        +oData.events.event[i].image.medium.url+'"></div><div class="column2"><div class="title">'
+        +oData.events.event[i].title+'</div><div class="details">'+oData.events.event[i].venue_name+'</div></div>'
         );
       }
-      $('.detail').append('<h5>' + oData.events.event[0].title + '</h5><h6>' + oData.events.event[0].venue_name + '</h6>');
     });
  }
 )
 
 var map;
-function initMap() {
+function initMap(lat, lng) {
   setTimeout(function(){
     map = new google.maps.Map(document.getElementById('map'), {
      zoom: 13,

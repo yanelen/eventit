@@ -152,6 +152,7 @@ header {
 
 .events {
   text-align: left;
+  margin: 0 2% 0 2%;
 }
 
 .close {
@@ -185,7 +186,7 @@ header {
 
 @media (min-width:768px) {
   .container2 {
-    width: 880px
+    width: 830px
   }
 }
 
@@ -204,11 +205,6 @@ header {
 
 .button {
   text-align: right;
-}
-
-.title {
-  font-size: 20px;
-  color: #a3a3a3;
 }
 
 .description {
@@ -263,7 +259,8 @@ header {
 /* Event */
 
 .picture {
-  width: 100%
+  width: 100%;
+
 }
 
 .detail {
@@ -273,6 +270,7 @@ header {
   width: 25%;
   float: left;
   margin-right: 3%;
+  vertical-align: top;
 }
 
 .column2 {
@@ -289,6 +287,15 @@ header {
 .row {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.details {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 18px;
+  color: #a3a3a3;
 }
 
 /* Footer */
