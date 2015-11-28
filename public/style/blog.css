@@ -45,7 +45,7 @@ h6, .h6 {
 .blog-nav-item {
   position: relative;
   display: inline-block;
-  padding: 0 10px 0 10px;
+  padding: 10px 10px 0 10px;
   font-weight: 500;
   color: #b0aeae;
 }
@@ -53,12 +53,6 @@ h6, .h6 {
 .blog-nav-item:focus {
   color: #6aa5ab;
   text-decoration: none;
-}
-
-@media (max-width: 640px) {
-  .blog-nav-item {
-    padding: 0 10px 5px 10px;
-  }
 }
 
 /* Active state gets a caret at the bottom */

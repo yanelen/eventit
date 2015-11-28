@@ -113,11 +113,11 @@ header {
 
 .blog-nav {
   text-align: center;
-  padding: 10px 0 0 10px;
 }
 
 .search {
   width: 180px;
+  padding: 10px 0 0 10px;
   display: inline-block;
 }
 
@@ -128,7 +128,7 @@ header {
 @media (max-width: 640px) {
   .search {
     width: 100%;
-    padding: 0 15px 0 0;
+    padding: 15px 15px 0 15px;
   }
 }
 
