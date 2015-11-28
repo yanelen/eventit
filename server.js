@@ -2,7 +2,12 @@ var express     = require('express'),
     server      = express(),
     bodyParser  = require('body-parser'),
     mongoose    = require('mongoose'),
-    Schema      = mongoose.Schema;
+    Schema      = mongoose.Schema,
+    PORT        = process.env.PORT || 4321,
+    MONGOURI = process.env.MONGOLAB_URI || "mongodb://localhost:27017",
+    dbname = "events";
+
+mongoose.connect(MONGOURI + "/" + dbname);
 
 var eventSchema  = new Schema({
   event_value: { type: String, required: true },
@@ -26,10 +31,6 @@ server.post('/events', function(request, response){
   });
 });
 
-
-
-
-mongoose.connect('mongodb://localhost:27017/Events');
-server.listen(3000, function(){
+server.listen(PORT, function(){
   console.log("Server is listening");
 });
