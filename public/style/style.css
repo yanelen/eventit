@@ -136,7 +136,7 @@ header {
 /* Posts */
 
 .event {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #dfe6eb;
@@ -259,9 +259,7 @@ header {
 
 .picture {
   width: 100%;
-}
-
-.detail {
+  background-color: #e4eef0;
 }
 
 .column1 {
