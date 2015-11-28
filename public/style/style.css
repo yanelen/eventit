@@ -5,15 +5,14 @@
   font-family: Verdana, sans-serif;
 }
 
-body {
-  background-color: #ededed;
+.logo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 30px;
+  color: #6aa5ab;
 }
 
-
-/* Log in & Sign up */
-
 .btn {
-  background-color: #23accf;
+  background-color: #f26c57;
   color: #ffffff;
   font-size: 18px;
   padding: 5px 20px;
@@ -191,7 +190,7 @@ header {
 }
 
 .btn-small {
-  background-color: #facd46;
+  background-color: #6aa5ab;
   font-size: 12px;
   padding: 6px 14px 7px 14px;
   display: inline;
@@ -199,7 +198,7 @@ header {
 }
 
 .btn-small:hover {
-  background-color: #dba92a;
+  background-color: #4a8077;
   color: #ffffff;
 }
 
