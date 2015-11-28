@@ -259,7 +259,6 @@ header {
 
 .picture {
   width: 100%;
-  background-color: #e4eef0;
 }
 
 .column1 {
@@ -267,7 +266,7 @@ header {
   float: left;
   margin-right: 3%;
   padding: 1%;
-  border: 1px solid #e6e6e6;
+  overflow: hidden;
 }
 
 .column2 {
