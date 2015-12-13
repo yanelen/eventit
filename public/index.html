@@ -16,36 +16,14 @@
   <body ng-controller="MainController as mainCtrl" style="background-color: #e4eef0;">
     <header>
       <div class="header container2">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li class="user"><img src="images/user.png"></li>
-            <li class="user">User</li>
-            <li class="logout" ng-click="mainCtrl.logOut()">
-            </li>
-          </ul>
-        </nav>
-        <div class="logo">Eventit</div>
+        <div class="logo">Eventit<span>&nbsp;&nbsp;NYC Music</span></div>
         </div>
       </div>
     </header>
 
-    <nav class="blog-nav">
-      <a class="blog-nav-item" href="#">Upcomming Events</a>
-      <a class="blog-nav-item" href="#">Favorite Events</a>
-      <a class="blog-nav-item" href="#">Favorite Artists</a>
-      <a class="blog-nav-item" href="#">Past Events</a>
-      <a class="blog-nav-item" href="#">Calendar</a>
-      <div class="search">
-        <div class="form-group">
-          <input ng-model="searchText" class="form-control" type="text" placeholder="Search" maxlength="70">
-        </div>
-      </div>
-    </nav>
-
     <div class="container2">
       <div id="map"></div>
       <div class="event">
-
         <div class="events">
         </div>
       </div>
