@@ -12,7 +12,7 @@ $(document).ready(
    EVDB.API.call("/events/search", oArgs, function(oData) {
      console.log(oData);
       for (i = 0; i < oData.events.event.length; i++){
-        initMap(oData.events.event[i].latitude, oData.events.event[i].longitude);
+        initMap(oData.events.event[0].latitude, oData.events.event[0].longitude);
         $('.events').append('<div class="title">'
         +oData.events.event[i].title+'</div><div class="details">'
         +oData.events.event[i].venue_name+'<br>'
